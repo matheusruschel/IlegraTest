@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        // data base initialization
+        if !userDefaults.boolForKey("firstTime") {
+            let dbInit = DBInitializer()
+            dbInit.generateDummyData()
+            userDefaults.setBool(true, forKey: "firstTime")
+        }
+        
+        
+
         return true
     }
 

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nwz-Vp-oCn">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Teams Table View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="TeamsTableViewController" customModule="IlegraTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,166 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B2S-cl-q55">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamCell" rowHeight="102" id="VoJ-ax-19f" customClass="TeamsTableViewCell" customModule="IlegraTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VoJ-ax-19f" id="eGA-cy-KOh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="101.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payroll:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwu-Gr-A4e">
+                                                    <rect key="frame" x="493" y="41" width="50" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supporters:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcd-h6-kl8">
+                                                    <rect key="frame" x="18" y="76" width="77" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjo-4F-93J">
+                                                    <rect key="frame" x="18" y="40" width="89" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cjo-4F-93J" firstAttribute="leading" secondItem="eGA-cy-KOh" secondAttribute="leadingMargin" constant="10" id="63Y-re-kZd"/>
+                                                <constraint firstItem="Fcd-h6-kl8" firstAttribute="leading" secondItem="eGA-cy-KOh" secondAttribute="leadingMargin" constant="10" id="HJy-BA-5lJ"/>
+                                                <constraint firstItem="cjo-4F-93J" firstAttribute="centerY" secondItem="eGA-cy-KOh" secondAttribute="centerY" id="Ois-ul-xrl"/>
+                                                <constraint firstItem="pwu-Gr-A4e" firstAttribute="centerY" secondItem="eGA-cy-KOh" secondAttribute="centerY" id="koa-EV-RvR"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pwu-Gr-A4e" secondAttribute="trailing" constant="49" id="mBd-FG-1Gv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fcd-h6-kl8" secondAttribute="bottom" id="x5e-YQ-ZfC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="payrollLabel" destination="pwu-Gr-A4e" id="OEC-Ow-zkk"/>
+                                            <outlet property="supportersLabel" destination="Fcd-h6-kl8" id="j35-RK-d1h"/>
+                                            <outlet property="teamNameLabel" destination="cjo-4F-93J" id="syc-NY-65z"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B2S-cl-q55" secondAttribute="trailing" id="6eR-hm-Pg6"/>
+                            <constraint firstItem="B2S-cl-q55" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FA2-uA-IPF"/>
+                            <constraint firstItem="B2S-cl-q55" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jPf-nX-6Cs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B2S-cl-q55" secondAttribute="bottom" id="l9V-QO-ckc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ACK-eO-el2"/>
+                    <connections>
+                        <outlet property="teamsTableView" destination="B2S-cl-q55" id="xT2-QI-dMG"/>
+                        <segue destination="cyj-KW-eqV" kind="show" identifier="playersVCSegue" id="ndQ-36-hrv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1229" y="387"/>
+        </scene>
+        <!--Players Table View Controller-->
+        <scene sceneID="sHO-c5-yIC">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="cyj-KW-eqV" customClass="PlayersTableViewController" customModule="IlegraTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2C2-ac-M57"/>
+                        <viewControllerLayoutGuide type="bottom" id="j4u-gh-WKm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oQO-iO-4dc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-hS-58z">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playersCell" rowHeight="70" id="nhj-Im-xqP" customClass="PlayerTableViewCell" customModule="IlegraTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nhj-Im-xqP" id="KxI-3Q-OMa">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG5-tJ-JTL">
+                                                    <rect key="frame" x="8" y="24" width="43" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="payroll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-cd-wMO">
+                                                    <rect key="frame" x="522" y="24" width="51" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGz-zA-YVo">
+                                                    <rect key="frame" x="8" y="48.5" width="35.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JGz-zA-YVo" firstAttribute="leading" secondItem="XG5-tJ-JTL" secondAttribute="leading" id="FKG-Q8-DiH"/>
+                                                <constraint firstItem="XG5-tJ-JTL" firstAttribute="leading" secondItem="KxI-3Q-OMa" secondAttribute="leadingMargin" id="OBh-iH-Cjq"/>
+                                                <constraint firstItem="k8r-cd-wMO" firstAttribute="centerY" secondItem="KxI-3Q-OMa" secondAttribute="centerY" id="pRr-hV-nLR"/>
+                                                <constraint firstItem="JGz-zA-YVo" firstAttribute="top" secondItem="XG5-tJ-JTL" secondAttribute="bottom" constant="3" id="sP4-4x-YVt"/>
+                                                <constraint firstItem="XG5-tJ-JTL" firstAttribute="centerY" secondItem="KxI-3Q-OMa" secondAttribute="centerY" id="x1h-vT-UOG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="k8r-cd-wMO" secondAttribute="trailing" constant="19" id="x3q-yZ-gEY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ageLabel" destination="JGz-zA-YVo" id="WfM-3d-6ho"/>
+                                            <outlet property="nameLabel" destination="XG5-tJ-JTL" id="EJC-RY-LA2"/>
+                                            <outlet property="payrollLabel" destination="k8r-cd-wMO" id="gef-GZ-brO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JPw-hS-58z" firstAttribute="top" secondItem="2C2-ac-M57" secondAttribute="bottom" id="PGS-vx-Rp2"/>
+                            <constraint firstItem="j4u-gh-WKm" firstAttribute="top" secondItem="JPw-hS-58z" secondAttribute="bottom" id="hJ2-oJ-PrY"/>
+                            <constraint firstItem="JPw-hS-58z" firstAttribute="leading" secondItem="oQO-iO-4dc" secondAttribute="leading" id="ngp-C6-LJX"/>
+                            <constraint firstAttribute="trailing" secondItem="JPw-hS-58z" secondAttribute="trailing" id="y69-77-9iC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playersTableView" destination="JPw-hS-58z" id="EPS-Wt-CUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnU-Ad-G4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yrf-vF-neg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nwz-Vp-oCn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zOp-dE-sGR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vnv-2y-4uL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVC-2f-Qmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="387"/>
         </scene>
     </scenes>
 </document>

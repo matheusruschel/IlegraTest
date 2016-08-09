@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		2C3873CC1D594E5500524586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3873CB1D594E5500524586 /* AppDelegate.swift */; };
-		2C3873CE1D594E5500524586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3873CD1D594E5500524586 /* ViewController.swift */; };
 		2C3873D11D594E5500524586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3873CF1D594E5500524586 /* Main.storyboard */; };
 		2C3873D31D594E5500524586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3873D21D594E5500524586 /* Assets.xcassets */; };
 		2C3873D61D594E5500524586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3873D41D594E5500524586 /* LaunchScreen.storyboard */; };
 		2C3873E11D594E5500524586 /* IlegraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3873E01D594E5500524586 /* IlegraTestTests.swift */; };
 		2C3873EC1D594E5500524586 /* IlegraTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3873EB1D594E5500524586 /* IlegraTestUITests.swift */; };
+		2C3873FE1D594FB300524586 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3873FC1D594FB300524586 /* libsqlite3.0.tbd */; };
+		2C3873FF1D594FB300524586 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3873FD1D594FB300524586 /* libsqlite3.tbd */; };
+		2C3874031D59508800524586 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874021D59508800524586 /* DBManager.m */; };
+		2C3874081D59566A00524586 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874071D59566A00524586 /* TeamsTableViewController.swift */; };
+		2C38740B1D59594800524586 /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38740A1D59594800524586 /* TeamsTableViewCell.swift */; };
+		2C38740E1D5965C400524586 /* TeamsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38740D1D5965C400524586 /* TeamsDAO.swift */; };
+		2C3874101D59662100524586 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38740F1D59662100524586 /* Team.swift */; };
+		2C3874131D596EE400524586 /* PlayerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874121D596EE400524586 /* PlayerDAO.swift */; };
+		2C3874151D596F2F00524586 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874141D596F2F00524586 /* Player.swift */; };
+		2C3874171D596FDA00524586 /* Supporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874161D596FDA00524586 /* Supporter.swift */; };
+		2C3874191D597B5200524586 /* SupporterDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874181D597B5200524586 /* SupporterDAO.swift */; };
+		2C38741B1D597DAC00524586 /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38741A1D597DAC00524586 /* PlayersTableViewController.swift */; };
+		2C38741E1D5A09A000524586 /* test.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2C38741D1D5A09A000524586 /* test.sql */; };
+		2C3874201D5A115600524586 /* DBInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38741F1D5A115600524586 /* DBInitializer.swift */; };
+		2C3874221D5A230D00524586 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874211D5A230D00524586 /* PlayerTableViewCell.swift */; };
+		2C3874241D5A4E8500524586 /* QueryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3874231D5A4E8500524586 /* QueryStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +51,6 @@
 /* Begin PBXFileReference section */
 		2C3873C81D594E5500524586 /* IlegraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlegraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3873CB1D594E5500524586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C3873CD1D594E5500524586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C3873D01D594E5500524586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C3873D21D594E5500524586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C3873D51D594E5500524586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,24 @@
 		2C3873E71D594E5500524586 /* IlegraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlegraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3873EB1D594E5500524586 /* IlegraTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraTestUITests.swift; sourceTree = "<group>"; };
 		2C3873ED1D594E5500524586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C3873FC1D594FB300524586 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2C3873FD1D594FB300524586 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2C3874001D59508700524586 /* IlegraTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IlegraTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C3874011D59508800524586 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		2C3874021D59508800524586 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		2C3874071D59566A00524586 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		2C38740A1D59594800524586 /* TeamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewCell.swift; sourceTree = "<group>"; };
+		2C38740D1D5965C400524586 /* TeamsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsDAO.swift; sourceTree = "<group>"; };
+		2C38740F1D59662100524586 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		2C3874121D596EE400524586 /* PlayerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDAO.swift; sourceTree = "<group>"; };
+		2C3874141D596F2F00524586 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2C3874161D596FDA00524586 /* Supporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supporter.swift; sourceTree = "<group>"; };
+		2C3874181D597B5200524586 /* SupporterDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupporterDAO.swift; sourceTree = "<group>"; };
+		2C38741A1D597DAC00524586 /* PlayersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
+		2C38741D1D5A09A000524586 /* test.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.sql; sourceTree = "<group>"; };
+		2C38741F1D5A115600524586 /* DBInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBInitializer.swift; sourceTree = "<group>"; };
+		2C3874211D5A230D00524586 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		2C3874231D5A4E8500524586 /* QueryStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3873FE1D594FB300524586 /* libsqlite3.0.tbd in Frameworks */,
+				2C3873FF1D594FB300524586 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +111,9 @@
 		2C3873BF1D594E5500524586 = {
 			isa = PBXGroup;
 			children = (
+				2C38741D1D5A09A000524586 /* test.sql */,
+				2C3873FC1D594FB300524586 /* libsqlite3.0.tbd */,
+				2C3873FD1D594FB300524586 /* libsqlite3.tbd */,
 				2C3873CA1D594E5500524586 /* IlegraTest */,
 				2C3873DF1D594E5500524586 /* IlegraTestTests */,
 				2C3873EA1D594E5500524586 /* IlegraTestUITests */,
@@ -97,8 +134,10 @@
 		2C3873CA1D594E5500524586 /* IlegraTest */ = {
 			isa = PBXGroup;
 			children = (
+				2C38740C1D59656500524586 /* Model */,
+				2C3874061D59564000524586 /* ViewController */,
+				2C3873F91D594E6800524586 /* DB */,
 				2C3873CB1D594E5500524586 /* AppDelegate.swift */,
-				2C3873CD1D594E5500524586 /* ViewController.swift */,
 				2C3873CF1D594E5500524586 /* Main.storyboard */,
 				2C3873D21D594E5500524586 /* Assets.xcassets */,
 				2C3873D41D594E5500524586 /* LaunchScreen.storyboard */,
@@ -123,6 +162,58 @@
 				2C3873ED1D594E5500524586 /* Info.plist */,
 			);
 			path = IlegraTestUITests;
+			sourceTree = "<group>";
+		};
+		2C3873F91D594E6800524586 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				2C3874011D59508800524586 /* DBManager.h */,
+				2C3874021D59508800524586 /* DBManager.m */,
+				2C3874001D59508700524586 /* IlegraTest-Bridging-Header.h */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		2C3874061D59564000524586 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C3874091D59592B00524586 /* Cell */,
+				2C3874071D59566A00524586 /* TeamsTableViewController.swift */,
+				2C38741A1D597DAC00524586 /* PlayersTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2C3874091D59592B00524586 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C38740A1D59594800524586 /* TeamsTableViewCell.swift */,
+				2C3874211D5A230D00524586 /* PlayerTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		2C38740C1D59656500524586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C3874111D59669E00524586 /* DAO */,
+				2C38740F1D59662100524586 /* Team.swift */,
+				2C3874141D596F2F00524586 /* Player.swift */,
+				2C3874161D596FDA00524586 /* Supporter.swift */,
+				2C3874231D5A4E8500524586 /* QueryStatus.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2C3874111D59669E00524586 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				2C38740D1D5965C400524586 /* TeamsDAO.swift */,
+				2C3874121D596EE400524586 /* PlayerDAO.swift */,
+				2C3874181D597B5200524586 /* SupporterDAO.swift */,
+				2C38741F1D5A115600524586 /* DBInitializer.swift */,
+			);
+			name = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +322,7 @@
 			files = (
 				2C3873D61D594E5500524586 /* LaunchScreen.storyboard in Resources */,
 				2C3873D31D594E5500524586 /* Assets.xcassets in Resources */,
+				2C38741E1D5A09A000524586 /* test.sql in Resources */,
 				2C3873D11D594E5500524586 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +348,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C3873CE1D594E5500524586 /* ViewController.swift in Sources */,
+				2C3874101D59662100524586 /* Team.swift in Sources */,
+				2C38740B1D59594800524586 /* TeamsTableViewCell.swift in Sources */,
+				2C3874241D5A4E8500524586 /* QueryStatus.swift in Sources */,
+				2C3874031D59508800524586 /* DBManager.m in Sources */,
+				2C3874191D597B5200524586 /* SupporterDAO.swift in Sources */,
+				2C3874201D5A115600524586 /* DBInitializer.swift in Sources */,
+				2C38741B1D597DAC00524586 /* PlayersTableViewController.swift in Sources */,
+				2C3874221D5A230D00524586 /* PlayerTableViewCell.swift in Sources */,
+				2C38740E1D5965C400524586 /* TeamsDAO.swift in Sources */,
+				2C3874151D596F2F00524586 /* Player.swift in Sources */,
+				2C3874081D59566A00524586 /* TeamsTableViewController.swift in Sources */,
+				2C3874131D596EE400524586 /* PlayerDAO.swift in Sources */,
+				2C3874171D596FDA00524586 /* Supporter.swift in Sources */,
 				2C3873CC1D594E5500524586 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +503,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IlegraTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.IlegraTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IlegraTest/IlegraTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +517,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IlegraTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.IlegraTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IlegraTest/IlegraTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
